@@ -105,7 +105,7 @@ a:focus {
   min-width: 100%;
 	min-height: 100%;
 	text-align: center;	
-	background: linear-gradient(137deg, rgb(86, 162, 255), rgba(0, 0, 30), rgb(0,141,236) 88%);
+	background: linear-gradient(137deg, rgb(86, 162, 255), rgba(0, 0, 30), rgba(0, 0, 30),  rgb(0,141,236) 88%);
 	background-size: 300% 300%;
 	-webkit-animation: MoveBG 60s ease infinite;
 	-moz-animation: MoveBG 60s ease infinite;
