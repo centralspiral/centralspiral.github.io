@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700");
+
+body {
+  line-height: 1.6;
+  font-family: "Open+Sans", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+p, .paragraph {
+  color: #6f6f6f;
+}
+
+h1 {
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 56px;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #008dec;
+}
+
+.slick-slide {
+  outline: 0;
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.section-lg {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-title {
+  margin-bottom: 30px;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.bg-primary {
+  background: #008dec !important;
+}
+
+.text-primary {
+  color: #008dec !important;
+}
+
+.zindex-1 {
+  z-index: 1;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #B4B6B6;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link:active {
+  color: #ffffff;
+}
+
+.navigation {
+  transition: 0.3s ease;
+  color: #ffffff;
+}
+
+.navbar {
+  transition: 0.3s ease;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    padding-bottom: 20px;
+  }
+}
+
+.nav-bg {
+  background-color: #00001E;
+}
+
+.nav-bg .navbar {
+  padding: 10px 0;
+}
+
+.nav-item {
+  padding: 20px 10px;
+}
+
+.hero-section {
+  background: linear-gradient(137deg, rgba(128, 192, 226, 1) 7%, rgba(0, 0, 30, 1) 40%);
+  background-color: rgba(0, 0, 30, 1);
+  color: #7f7f7f;
+  padding-top: 150px;
+  padding-bottom: 177px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.title-heading {
+  font-size: 4.5em;
+  font-weight: 200;
+  margin: 0.5em 0;
+  color: #EDEEEE;
+  text-align: center;
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1, .h1 {
+    font-size: 42px;
+  }
+
+  .title-heading {
+    font-size: 2.5em;
+  }
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section-lg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
