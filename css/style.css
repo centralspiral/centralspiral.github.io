@@ -102,14 +102,37 @@ a:focus {
 }
 
 .hero-section {
-  background: linear-gradient(137deg, rgba(128, 192, 226, 1) 7%, rgba(0, 0, 30, 1) 40%);
-  background-color: rgba(0, 0, 30, 1);
-  color: #7f7f7f;
+  min-width: 100%;
+	min-height: 100%;
+	text-align: center;	
+	background: linear-gradient(137deg, rgb(86, 162, 255,1), rgba(0, 0, 30, 1), rgb(86, 162, 255,1) 87%);
+	background-size: 300% 300%;
+	-webkit-animation: MoveBG 60s ease infinite;
+	-moz-animation: MoveBG 60s ease infinite;
+	-o-animation: MoveBG 60s ease infinite;
+	animation: MoveBG 60s ease infinite;
   padding-top: 150px;
   padding-bottom: 177px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
+}
+@-webkit-keyframes MoveBG {
+    0%{background-position:0% 84%}
+    50%{background-position:100% 16%}
+    100%{background-position:0% 84%}
+}
+@-moz-keyframes MoveBG {
+    0%{background-position:0% 84%}
+    50%{background-position:100% 16%}
+    100%{background-position:0% 84%}
+}
+@-o-keyframes MoveBG {
+    0%{background-position:0% 84%}
+    50%{background-position:100% 16%}
+    100%{background-position:0% 84%}
+}
+@keyframes MoveBG { 
+    0%{background-position:0% 84%}
+    50%{background-position:100% 16%}
+    100%{background-position:0% 84%}
 }
 
 .title-heading {
