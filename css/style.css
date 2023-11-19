@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700");
-b {
-  font-weight: bold;
-}
-
 body {
   line-height: 1.6;
   font-family: "Open+Sans", sans-serif;
@@ -27,7 +23,10 @@ a:focus {
   text-decoration: none;
   color: #008dec;
 }
-
+b {
+  font-weight: normal;
+  color: black;
+}
 .slick-slide {
   outline: 0;
 }
