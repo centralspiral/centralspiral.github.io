@@ -34,8 +34,7 @@
 	td, th {
 	border: 1px solid #000;
 	text-align: right;
-	padding: 3px 7px;
-	margin: 7px;
+	padding: 3px;
 	}
 	.title_table{
 	padding: 10px; font-weight: bold; font-size:33px;
@@ -46,6 +45,10 @@
 	tr:nth-child(even) {
   	background-color: #eee;
   	}
+  	.responsive {
+  max-width: 100%;
+  height: auto;
+}
   </style>
 </head>
 <body>
@@ -158,7 +161,7 @@ CENTRAL SPIRAL leverages this concept by integrating lossless data compression i
 	<p align="justify">offers a dual approach to lossless data compression: The cloud-based API on AWS efficiently compresses data, reducing storage and transfer costs by up to 99%. For decompression, SPIRAL-BOX is required, allowing offline access to original data without internet. Alternatively, the SPIRAL-BOX standalone solution handles both compression and decompression in-house using built-in GPUs, eliminating the need for the cloud API and internet connectivity. This makes SPIRAL-BOX adaptable for small-scale environments with standard NAS storage and minimal infrastructure, yet capable of scaling up and integrating with cloud services for larger workflows. SPIRAL-BOX ensures efficient and cost-effective workflow management, whether operating locally or in the cloud.</p>
 	<br>
 	<center>
-	<img src="images/infographic.svg">
+	<img src="images/infographic.svg" class="responsive">
 	</center>
 	<br><br>
 	
