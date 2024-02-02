@@ -24,6 +24,28 @@
         margin-bottom: 10px;
       }
     }
+    
+    table {
+	border-collapse: collapse;
+	width: 100%;
+	font-size:14px;
+	}
+
+	td, th {
+	border: 1px solid #000;
+	text-align: right;
+	padding: 3px 7px;
+	margin: 7px;
+	}
+	.title_table{
+	padding: 10px; font-weight: bold; font-size:33px;
+	}
+	.cell-highlight {
+	  font-weight: bold;
+	  }
+	tr:nth-child(even) {
+  	background-color: #eee;
+  	}
   </style>
 </head>
 <body>
@@ -49,12 +71,133 @@
     <div class="row">
       <div class="col-lg-12 zindex-2">
         <p align="justify">CENTRAL SPIRAL, founded in July 2023, goes beyond ideas; it's about pioneering concepts that redefine the future. Our mission is grounded in an unceasing pursuit of innovation, particularly in the field of lossless data compression. We deeply explore the complexities of digital information, seeking solutions that are efficient and transformative. We're developing technology to forge a legacy of efficiency and sustainability that will inspire and empower future generations. If your passion is to revolutionize how the world handles data, creating systems that function and inspire, then CENTRAL SPIRAL is where your aspirations align with reality.</p>
-        <br>
+    <br>
+    
+  
         <h4>A New Horizon in Data Compression</h4>
         <p align="justify">At the forefront of technological innovation, <a href="technology.html">our compression technology</a> marks a new paradigm in data compression, capable of further compressing already compressed files. Poised for deployment across a wide array of applications, our technology is set to revolutionize everything from cutting-edge data centers to the mobile devices in your hands. We envisage a world where transmission speeds are incredibly swift, storage demands are drastically reduced, and our clients' performance is exponentially elevated. This advancement promises to redefine how data is managed, ensuring efficiency and effectiveness in a digitally driven world.</p>
 	<br>
         <h4>Environmental and Global Advancements</h4>
         <p align="justify">Our technology, at the intersection of innovation and sustainability, achieves a remarkable 99% reduction in CO2 emissions through data compression. This reduces storage space needs and energy consumption, allowing businesses to streamline operations while contributing to environmental conservation. Our strategy combines environmental stewardship with technological innovation, leading towards a more efficient and sustainable future.</p>
+        <br>
+        <h4>High-Performance GPU</h4>
+    
+    <p align="justify">Compression techniques, especially lossless data compression, play a pivotal role in enhancing the efficiency and performance of various computing tasks. By employing lossless compression, it is possible to significantly reduce the size of datasets without losing any original data, enabling more efficient storage and faster data transmission. This is particularly crucial in environments where data integrity and the complete recovery of the original information are paramount.
+
+<br><br>
+
+CENTRAL SPIRAL leverages this concept by integrating lossless data compression into its offerings, setting a new standard in data handling. It outperforms existing algorithms in terms of compression ratios and speeds. This breakthrough not only facilitates a more efficient use of storage and bandwidth but also opens up new possibilities for managing and processing large datasets in resource-constrained environments, ensuring that data can be transmitted and stored more effectively while maintaining its integrity.</p>
+<br>
+    
+   <center> 
+    <table>
+  	   
+    	   <tr>
+            <th colspan="4" class="title_table">NVIDIA A100</th>
+          </tr>
+    	   
+	  <tr>
+	    <th>Lossless Compression</th>
+	    <th>Compression (GB/s)</th>
+	    <th>Decompression (GB/s)</th>
+	    <th>Ratio</th>
+	  </tr>
+	  <tr>
+	    <td><a target="_blank" href="https://github.com/lz4/lz4">LZ4</a></td>
+	    <td>7.11</td>
+	    <td>34.13</td>
+	    <td>1.97</td>
+	  </tr>
+	  <tr>
+	    <td><a target="_blank" href="https://github.com/google/snappy/">Snappy</a></td>
+	    <td>9.00</td>
+	    <td>40.70</td>
+	    <td>1.99</td>
+	  </tr>
+	  <tr>
+	    <td>ANS</td>
+	    <td>199.99</td>
+	    <td>257.13</td>
+	    <td>1.59</td>
+	  </tr>
+	  <tr>
+	    <td><a href="https://developer.nvidia.com/blog/accelerating-load-times-for-directx-games-and-apps-with-gdeflate-for-directstorage/">gdeflate-high-compression</a></td>
+	    <td>0.27</td>
+	    <td>32.93</td>
+	    <td>3.10</td>
+	  </tr>
+	  <tr>
+	    <td>bitcomp-sparse</td>
+	    <td>425.03</td>
+	    <td class="cell-highlight">449.00</td>
+	    <td>1.15</td>
+	  </tr>
+	  <tr>
+	    <td><a target="_blank" href="https://github.com/facebook/zstd">zstd</a></td>
+	    <td>5.69</td>
+	    <td>21.26</td>
+	    <td>2.87</td>
+	  </tr>
+	  <tr>
+	    <td><a href="technology.html">C SPIRAL</a></td>
+	    <td class="cell-highlight">3427.20</td>
+	    <td>332.74</td>
+	    <td class="cell-highlight">3057.80</td>
+	  </tr>
+	</table>
+	<p style="font-size:13px; text-align: right">
+              NVIDIA-optimized Compression Formats (use nvCOMP to compress/decompress).<br>
+              * Bitcomp: Proprietary compressor designed for efficient GPU compression in Scientific Computing applications.<br>
+              * ANS: Proprietary entropy encoder based on asymmetric numeral systems (ANS).<br>
+              <br>
+              These results are based on data from <a target="_blank" href="https://sun.aei.polsl.pl//~sdeor/index.php?page=silesia">Silesia</a>.
+	</p>
+</center> 
+	
+	<h4>SPIRAL-BOX</h4>
+	<p align="justify">offers a dual approach to lossless data compression: The cloud-based API on AWS efficiently compresses data, reducing storage and transfer costs by up to 99%. For decompression, SPIRAL-BOX is required, allowing offline access to original data without internet. Alternatively, the SPIRAL-BOX standalone solution handles both compression and decompression in-house using built-in GPUs, eliminating the need for the cloud API and internet connectivity. This makes SPIRAL-BOX adaptable for small-scale environments with standard NAS storage and minimal infrastructure, yet capable of scaling up and integrating with cloud services for larger workflows. SPIRAL-BOX ensures efficient and cost-effective workflow management, whether operating locally or in the cloud.</p>
+	<br>
+	<center>
+	<img src="images/infographic.svg">
+	</center>
+	<br><br>
+	
+        <h4>Performance Scaling</h4>
+        <p align="justify">CENTRAL SPIRAL, the system is designed to operate efficiently on any computing device equipped with GPUs.  This setup enables a significant acceleration in data compression and decompression processes, fully leveraging the power of GPUs. Below, we present a table that illustrates the approximate performance of CENTRAL SPIRAL across various computing platforms, highlighting how it adapts and enhances its operation based on the specific capabilities of each GPU.</p>
+        <br>
+        
+        <table>
+        
+	  <tr>
+	    <th>NVIDIA GPU</th>
+	    <th>COMPRESSION (GB/s)</th>
+	    <th>DECOMPRESSION (GB/s)</th>
+	  </tr>
+	  <tr>
+	    <td>GTX 1080</td>
+	    <td>109.84</td>
+	    <td>10.66</td>
+	  </tr>
+	  <tr>
+	    <td>RTX 4090</td>
+	    <td>439.36</td>
+	    <td>42.66</td>
+	  </tr>
+	  <tr>
+	    <td><a target="_blank" href="https://aws.amazon.com/ec2/instance-types/p4/">A100 / p4d.24xlarge (AWS)</a></td>
+	    <td>3427.20</td>
+	    <td>332.74</td>
+	  </tr>
+	  <tr>
+	    <td>L40S (LaunchPad)</td>
+	    <td>4032.26</td>
+	    <td>391.48</td>
+	  </tr>
+	</table>
+        
+        <br>
+        
+        
         <br>
         <h4>Industrial Impact</h4>
         <p align="justify">We are spearheading a transformation in the way industries handle information, unlocking unprecedented levels of efficiency and accessibility. With our state-of-the-art data compression technology, users across various sectors experience enhanced performance and speed in their daily operations:</p>
