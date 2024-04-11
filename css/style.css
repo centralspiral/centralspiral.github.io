@@ -93,7 +93,7 @@ b {
 
 .nav-bg {
   background: rgb(0,141,236);
-  background: linear-gradient(137deg, rgba(0, 0, 30) 0%, rgba(0, 0, 30) 35%, rgb(0,141,236) 100% );
+  background: linear-gradient(137deg, rgba(0, 0, 30) 0%, rgba(0, 0, 30) 57%, rgb(0,141,236) 100% );
 }
 
 .nav-bg .navbar {
