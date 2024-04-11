@@ -79,10 +79,21 @@ b {
 }
 .hero-section {
       position: relative;
-      height: 80vh; /* Establece la altura del 100% del viewport */
+      height: 80vh;
       display: flex;
-      justify-content: center; /* Centra horizontalmente */
-      align-items: center; /* Centra verticalmente */
+      justify-content: center; 
+      align-items: center;
+    }
+
+    .hero-section:empty::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000; 
+      z-index: 1; 
     }
 
     .hero-section video {
@@ -92,7 +103,7 @@ b {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      z-index: -1;
+      z-index: 0;
     }
 
     .container {
