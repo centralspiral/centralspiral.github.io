@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -7,31 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-name" content="CENTRAL SPIRAL" />
   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <link rel="stylesheet" href="plugins/Venobox/venobox.css">
-  <link rel="stylesheet" href="plugins/aos/aos.css">
   <link href="css/style.css" rel="stylesheet">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-<style>
-    @media only screen and (max-width: 600px) {
-      .custom-form {
-        flex-direction: column;
-        max-width: 100%;
-      }
-      input {
-        margin-bottom: 10px;
-      }
-    }
-
-  	.responsive {
-  max-width: 100%;
-  height: auto;
-}
-  </style>
 </head>
 <body>
+
 <section class="fixed-top navigation">
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light" style="font-weight: bold;">
@@ -39,15 +21,23 @@
     </nav>
   </div>
 </section>
-<section class="hero-section">
-  <div class="container">
+
+
+<section class="hero-section" style="position:relative;">
+  <video autoplay muted loop style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index: -1;">
+    <source src="images/video.mp4" type="video/mp4">
+  </video>
+  <div class="container" style="position:relative; z-index:1;">
     <div class="row">
-      <div class="col-lg-12 text-center zindex-1">
-        <h1 class="title-heading">Empowering progress through data compression</h1>
+      <div class="col-lg-12 text-center">
+        <h1 class="title-heading" style="color:white;">Empowering progress through data compression</h1>
       </div>
     </div>
   </div>
 </section>
+
+
+
 
  <br><br>
 <section class="section-con">
@@ -58,8 +48,6 @@
 		<a href="technology.html">Our compression technology</a>  marks a breakthrough by enabling the compression of any data, including those already compressed, thereby drastically reducing storage requirements and speeding up transmission rates. This advancement not only enhances storage efficiency across multiple memory tiers, enabling quicker data retrieval and lower latency, but also boosts performance across diverse domains such as System-on-Chip, High-Performance Computing, Artificial Intelligence, and more. This innovation is set to significantly improve efficiency and sustainability in data centers and microchips worldwide, establishing a new paradigm in data compression.
 	
 	</p>
-       
-        
     	<br>
 	<center>
 	<img src="images/pyramind.png" class="responsive">
@@ -69,41 +57,43 @@
   </div>
 </section>
  <br><br>
-<hr>
 
 <section class="section-lg">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 zindex-2">
-	<h4>SPIRAL-BOX </h4> <em>Phase I (ready to use)</em>
-
-	<p align="justify"> Offers a dual approach to lossless data compression: The cloud-based API on AWS efficiently compresses data, reducing storage and transfer costs by up to 99%. For decompression, SPIRAL-BOX is required, allowing offline access to original data without internet. Alternatively, the SPIRAL-BOX standalone solution handles both compression and decompression in-house using built-in GPUs, eliminating the need for the cloud API and internet connectivity. This makes SPIRAL-BOX adaptable for small-scale environments with standard NAS storage and minimal infrastructure, yet capable of scaling up and integrating with cloud services for larger workflows. SPIRAL-BOX ensures efficient and cost-effective workflow management, whether operating locally or in the cloud.</p>
-	<br>
-	<a href="FAQ.html" target="_blank">Frequently Asked Questions </a> 
-	<br><br>
+        <em>SPIRAL-BOX (ready to use)</em>
+        <p align="justify">Offers a dual approach to lossless data compression: The cloud-based API on AWS efficiently compresses data, reducing storage and transfer costs by up to 99%. For decompression, SPIRAL-BOX is required, allowing offline access to original data without internet. Alternatively, the SPIRAL-BOX standalone solution handles both compression and decompression in-house using built-in GPUs, eliminating the need for the cloud API and internet connectivity. This makes SPIRAL-BOX adaptable for small-scale environments with standard NAS storage and minimal infrastructure, yet capable of scaling up and integrating with cloud services for larger workflows. SPIRAL-BOX ensures efficient and cost-effective workflow management, whether operating locally or in the cloud.</p>
+        <br>
+        <a href="FAQ.html" target="_blank">Frequently Asked Questions </a> 
+        <br><br>
 	<center>
 	<img src="images/infographic.svg"  class="responsive">
-	</center>
-	<br><br>
-        <h4>SPIRAL-CACHE</h4>
-        <em>Phase II & III (upcoming years)</em>
-        <p align="justify">
-		Current microprocessors are facing increasing pressure in terms of memory capacity and effective bandwidth, particularly with the shift towards multi-core solutions. 
-		<a href="https://en.wikipedia.org/wiki/Amdahl%27s_law" target="_blank">Amdahl's law</a>, which dictates that computational performance requires proportional increases in memory capacity
-		and effective bandwidth, has become a current bottleneck and a major issue. To address this challenge, 
-		SPIRAL-CACHE emerges as a solution by providing significantly improved effective bandwidth, benefiting both general-purpose processors and SoC accelerators in fields such as 
-		High-Performance Computing and Artificial intelligence.
-	</p>
-	<br><br>
-	<center>
-	<img src="images/SoC.png" class="responsive" >
 	</center>
       </div>
     </div>
   </div>
 </section>
- <br><br>
+
+<section class="section-lg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 zindex-2">
+        <em>SPIRAL-CACHE (upcoming years)</em>
+        <p align="justify">Current microprocessors are facing increasing pressure in terms of memory capacity and effective bandwidth, particularly with the shift towards multi-core solutions. <a href="https://en.wikipedia.org/wiki/Amdahl%27s_law" target="_blank">Amdahl's law</a>, which dictates that computational performance requires proportional increases in memory capacity and effective bandwidth, has become a current bottleneck and a major issue. To address this challenge, SPIRAL-CACHE emerges as a solution by providing significantly improved effective bandwidth, benefiting both general-purpose processors and SoC accelerators in fields such as High-Performance Computing and Artificial intelligence.</p>
+      	<br><br>
+	<center>
+	<img src="images/SoC.png" class="responsive" >
+	</center>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
 <hr>
+
 
 <section class="section-lg">
   <div class="container">
@@ -118,8 +108,8 @@
     </div>
   </div>
 </section>
-<hr>
 
+<hr>
 <section class="section-lg">
   <div class="container">
     <div class="row">
@@ -128,19 +118,15 @@
  <p align="justify">Join us at CENTRAL SPIRAL, where your passion for revolutionizing data handling aligns with creating a lasting legacy for future generations.</p>
        </center> 
         <br>
-       <a href="https://www.linkedin.com/company/cspiral/" target="_blank"> Linkedin</a>
+        <a href="https://www.linkedin.com/company/cspiral/" target="_blank"> Linkedin</a>
 
       </div> 
     </div>
   </div>
- <br><br> 
+
 </section>
   
 <script src="plugins/jQuery/jquery.min.js"></script>
 <script src="plugins/bootstrap/bootstrap.min.js"></script>
-<script src="plugins/slick/slick.min.js"></script>
-<script src="plugins/Venobox/venobox.min.js"></script>
-<script src="plugins/aos/aos.js"></script>
-<script src="js/script.js"></script>
 </body>
 </html>
