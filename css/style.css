@@ -92,7 +92,7 @@ b {
 }
 
 .nav-bg {
-  background: rgb(0,141,236);
+  background: rgb(0,0,30);
   background: linear-gradient(137deg, rgba(0, 141,236) 0%, rgba(0, 0, 30) 37%, rgb(0,0,30) 100% );
 }
 
