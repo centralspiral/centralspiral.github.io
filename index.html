@@ -11,6 +11,8 @@
   <link href="css/style.css" rel="stylesheet">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="js/chart.js"></script>
+    
 </head>
 <body>
 
@@ -22,11 +24,11 @@
   </div>
 </section>
 
-
 <section class="hero-section" style="background: rgb(0,0,0);">
-  <video autoplay muted loop style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index: 1;">
+  <video autoplay muted loop style="position:absolute; object-fit:cover; z-index: 1;">
     <source src="images/video.mp4" type="video/mp4">
   </video>
+
   <div class="container" style="position:relative; z-index:2;">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -35,9 +37,6 @@
     </div>
   </div>
 </section>
-
-
-
 
  <br><br>
 <section class="section-con">
@@ -58,44 +57,48 @@
 </section>
  <br><br>
 <hr>
+<br>
+<section class="section-con">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 zindex-2">
+      <h2>SPIRAL-BOX <span style="color:#6f6f6f">(ready to use)</span> </h2>
+      <p>Our technology revolutionizes not only data storage but also its transfer, drastically reducing costs associated with storage infrastructure and energy consumption 
+	      while optimizing bandwidth usage for high-speed data transfers. While classical algorithms barely achieve a compression ratio of 4:1 at best, reducing a 1 TB file to 250 GB, with SPIRAL-BOX,
+	      this ratio skyrockets to over <b>3000:1</b>, compressing the same 1 TB down to approximately 0.3 GB.
+	      This signifies a paradigm shift in efficiency and the ability to handle large volumes of data more economically and swiftly than ever before, both in storage and transfer.
+      
+      <br><br>
+      <a href="FAQ.html" target="_blank">Frequently Asked Questions </a> 
+<br><br>      
+      </p>
+      </div>
+
+      <div class="col-lg-12 zindex-2">
+      <canvas id="compressionChart"></canvas>
+    </div>
+  </div>
+</section>
+ <br><br>
+
+<hr>
 <section class="section-lg">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 zindex-2">
-        <h2>SPIRAL-BOX <span style="color:#6f6f6f">(ready to use)</span> </h2>
-        <p align="justify">Offers a dual approach to lossless data compression: The cloud-based API on AWS efficiently compresses data, reducing storage and transfer costs by up to 99%. For decompression, SPIRAL-BOX is required, allowing offline access to original data without internet. Alternatively, the SPIRAL-BOX standalone solution handles both compression and decompression in-house using built-in GPUs, eliminating the need for the cloud API and internet connectivity. This makes SPIRAL-BOX adaptable for small-scale environments with standard NAS storage and minimal infrastructure, yet capable of scaling up and integrating with cloud services for larger workflows. SPIRAL-BOX ensures efficient and cost-effective workflow management, whether operating locally or in the cloud.</p>
-        <br>
-        <a href="FAQ.html" target="_blank">Frequently Asked Questions </a> 
-        <br><br>
-	<center>
-	<img src="images/infographic.svg"  class="responsive">
+        <h2>SPIRAL-CACHE <span style="color:#6f6f6f">(upcoming years)</span></h2>
+        <p align="justify">Current microprocessors are facing increasing pressure in terms of memory capacity and effective bandwidth, particularly with the shift towards multi-core solutions. <a href="https://en.wikipedia.org/wiki/Amdahl%27s_law" target="_blank">Amdahl's law</a>, which dictates that computational performance requires proportional increases in memory capacity and effective bandwidth, has become a current bottleneck and a major issue. To address this challenge, SPIRAL-CACHE emerges as a solution by providing significantly improved effective bandwidth, benefiting both general-purpose processors and SoC accelerators in fields such as High-Performance Computing and Artificial intelligence.</p>
+        <center>
+	<img src="images/flow.png"  class="responsive">
 	</center>
       </div>
-    </div>
-  </div>
-</section>
-<hr>
-<section class="section-lg">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 zindex-2">
-        <h2>SPIRAL-CACHE <span style="color:#6f6f6f">(forthcoming)</span></h2>
-        <p align="justify">
-	This innovation will provide a solution to significantly enhance the effective bandwidth in microprocessors, benefiting both general-purpose processors and SoC accelerators in fields such as HPC and AI.
-	It will integrate compression and decompression units into the global on-chip network and main memory communication channels, optimizing data flow without increasing hardware complexity.
-	</p>
-<br>
-      <center>
-	<img src="images/flow.png"  class="responsive">
-      </center>
-      </div>
+      
     </div>
   </div>
 </section>
 
 
 <hr>
-
 
 <section class="section-lg">
   <div class="container">
@@ -130,5 +133,6 @@
   
 <script src="plugins/jQuery/jquery.min.js"></script>
 <script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="js/ratios.js"></script>
 </body>
 </html>
