@@ -61,7 +61,7 @@ var ctx = document.getElementById('compressionChart').getContext('2d');
                                 x: {
                                     title: {
                                         display: true,
-                                        text: 'Lossless compression',
+                                        text: 'Lossless Compression',
                                         font: {
                                             size: 13
                                         }
