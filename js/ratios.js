@@ -50,9 +50,9 @@ var ctx = document.getElementById('compressionChart').getContext('2d');
                             type: 'logarithmic',
                             title: {
                                 display: true,
-                                text: 'Compression Ratio',
+                                text: 'Comp. Ratio',
                                 font: {
-                                    size: 13
+                                    size: 17
                                 }
                             },
 				
@@ -63,7 +63,7 @@ var ctx = document.getElementById('compressionChart').getContext('2d');
                                         display: true,
                                         text: 'Lossless Compression',
                                         font: {
-                                            size: 13
+                                            size: 17
                                         }
                                     }
                                 }
