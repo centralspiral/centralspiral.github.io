@@ -52,7 +52,7 @@ var ctx = document.getElementById('compressionChart').getContext('2d');
                                 display: true,
                                 text: 'Comp. Ratio',
                                 font: {
-                                    size: 17
+                                    size: 15
                                 }
                             },
 				
@@ -63,7 +63,7 @@ var ctx = document.getElementById('compressionChart').getContext('2d');
                                         display: true,
                                         text: 'Lossless Compression',
                                         font: {
-                                            size: 17
+                                            size: 15
                                         }
                                     }
                                 }
