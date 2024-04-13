@@ -125,6 +125,28 @@ b {
   margin: 0.5em 0;
   color: #EDEEEE;
 }
+
+#compressionChart {
+  width: 100%;
+  height: 300px; 
+}
+
+#compressionImage {
+  display: none; 
+  max-width: 100%; 
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  #compressionChart {
+    display: none;
+  }
+  #compressionImage {
+    display: block;
+  }
+}
+
+
  @media (max-width: 767px) { /* Media query para dispositivos con un ancho máximo de 768px (tabletas y móviles) */
       .hero-section {
         height: 50vh; /* Establece la altura del 50% del viewport */
