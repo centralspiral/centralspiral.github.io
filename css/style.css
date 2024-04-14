@@ -79,7 +79,7 @@ b {
 }
 .hero-section {
       position: relative;
-      height: 80vh;
+      height: 77vh;
       display: flex;
       justify-content: center; 
       align-items: center;
@@ -112,10 +112,10 @@ b {
     }
 
     .title-heading {
-        font-size: 4.5em;
+        font-size: 4.1em;
   font-weight: 200;
   margin: 0.5em 0;
-  color: #EDEEEE;
+  color: #FFF;
   text-align: center;
     }
 
