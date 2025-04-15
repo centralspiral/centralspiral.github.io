@@ -23,4 +23,92 @@
 		gap: 40px;
 		}
 	}
+#where-we-ve-been {
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#where-we-ve-been h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #666;
+}
+
+.timeline-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px;
+  padding: 0 20px 10px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.event {
+  flex: 1 1 calc(50% - 20px); 
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 100%; 
+  max-width: 280px; 
+}
+
+.event h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.event p {
+  margin: 10px 0 0;
+  font-size: 0.95em;
+  color: #444;
+}
+
+.event a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.event a:hover {
+  text-decoration: underline;
+}
+
+
+.timeline-container::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .timeline-container {
+    justify-content: center;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+  }
+
+  .event {
+    width: 300px; 
+  }
+}
+
+@media (max-width: 768px) {
+
+  .timeline-container {
+    flex-direction: column;
+  }
+
+  .event {
+    flex: 1 1 100%; 
+    max-width: 100%;
+  }
+}
+
 
