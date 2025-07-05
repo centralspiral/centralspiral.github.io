@@ -38,7 +38,7 @@
                     <a class="py-2.5 px-4 text-center rounded-lg duration-150 text-white bg-gray-800 hover:bg-gray-600 active:bg-gray-900 px-6 py-3 rounded-lg" target="_blank" href="https://cal.com/meet-spiral/meet">Schedule Demo</a>
                 </div>
                 <div>
-                    <video class="w-full rounded-lg shadow-lg" controls playbackRate="3">
+                    <video class="w-full rounded-lg shadow-lg" controls id="mVideo">
                         <source src="videoplayback.mp4" type="video/mp4"> Your browser does not support the video tag.
                     </video>
                 </div>
@@ -306,6 +306,10 @@
             mobileMenu.classList.toggle('hidden');
         });
     });
+</script>
+<script>
+        const video = document.getElementById('mVideo');
+        video.playbackRate = 3; 
 </script>
 </body>
 </html>
