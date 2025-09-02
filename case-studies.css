@@ -1,0 +1,137 @@
+
+:root { --ink:#0b1624; --accent:#008dec; --muted:#6b7280; --card:#ffffff; --border:#e5e7eb; }
+* { box-sizing: border-box; }
+body { color:#0f172a; background:#fff; font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif; }
+.wrap { max-width: 1120px; margin:0 auto; padding: 0 24px; }
+header.site { position: sticky; top:0; z-index:50; background: rgba(255,255,255,.95); border-bottom:1px solid var(--border); backdrop-filter: blur(8px); }
+.nav { display:flex; align-items:center; justify-content:space-between; gap:16px; height: 70px; }
+.logo { display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--ink); font-weight:700; }
+.logo img { height:28px; width:auto; }
+.btn { display:inline-block; background:var(--accent); color:#fff; padding:10px 16px; border-radius:999px; font-weight:700; border:1px solid var(--accent); text-decoration:none; }
+.btn.secondary { background:#fff; color:var(--accent); }
+.hero { height: 64px; } /* minimal hero space */
+.section { padding: 42px 0; border-top: 1px solid var(--border); }
+.header { margin-bottom: 12px; }
+.pill { display:inline-block; padding:6px 10px; border-radius:999px; background: rgba(0,141,236,.08); border:1px solid rgba(0,141,236,.25); font-weight:700; color:#0a223d; font-size:13px; letter-spacing:.2px; }
+.lead { color:#0b1624; font-size:1.02rem; line-height:1.5; }
+.card { background: var(--card); border:1px solid var(--border); border-radius: 16px; padding: 18px; box-shadow: 0 12px 38px rgba(2,6,23,.08); }
+.grid { display:grid; gap:18px; grid-template-columns: 1fr; }
+@media (min-width: 980px) { .grid { grid-template-columns: 1fr 1fr; } }
+.fact-grid { display:grid; gap:10px; grid-template-columns: 1fr 1fr; }
+.fact { background:#f8fbff; border:1px solid #e5f0fc; border-radius:12px; padding:10px; }
+.meta { color: var(--muted); font-size: .92rem; }
+table { width:100%; border-collapse: collapse; font-size: 14px; background:#fff; }
+th, td { text-align:left; padding:10px; border-bottom:1px solid var(--border); }
+tbody tr:hover { background:#f8fbff; }
+h1, h2, h3 { color: var(--ink); }
+footer { border-top:1px solid var(--border); color:#6b7280; padding: 28px 0 56px; }
+
+
+.num { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.table { border:1px solid var(--border); border-radius:12px; overflow:hidden; }
+.table thead th { background:#f4f7fb; font-weight:700; border-bottom:1px solid var(--border); }
+.table tbody tr:hover { background:#f8fbff; }
+.table td, .table th { white-space: nowrap; }
+
+/* ===== Fix: media centrada + tablas responsivas ===== */
+
+/* Si la imagen está dentro de .grid, que ocupe el ancho completo de la sección */
+.grid .media-card { grid-column: 1 / -1; justify-self: center; }
+
+/* Centrado real de la imagen y límite de ancho elegante */
+.media-card figure { margin: 0; text-align: center; }
+.media-card .media {
+  display: block;
+  width: auto;                 /* evita que se estire raro */
+  max-width: min(100%, 960px); /* no más de 960px en desktop */
+  height: auto;
+  margin: 0 auto;              /* centra horizontalmente */
+  border-radius: 12px;
+}
+.media-caption { margin-top: 8px; color: var(--muted); text-align: center; }
+
+/* En móvil sigue ocupando toda la fila (ya lo hace), en desktop se asegura también */
+@media (min-width: 980px) {
+  .grid .media-card { grid-column: 1 / -1; }
+}
+
+/* Tablas: no se “parten” en móvil; permiten scroll lateral suave */
+.card { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.table { min-width: 760px; }   /* evita columnas apretadas y saltos de línea */
+.table td, .table th { white-space: nowrap; } /* ya lo tienes, lo mantenemos */
+
+/* ===== Mobile-first table cards (sin scroll horizontal) ===== */
+@media (max-width: 640px) {
+  /* No fuerces ancho mínimo en móvil */
+  .table { min-width: 0; border: 0; }
+
+  /* Oculta el header y convierte cada fila en una “card” */
+  .table thead { display: none; }
+  .table tbody tr {
+    display: block;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: #fff;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 8px 24px rgba(2,6,23,.06);
+  }
+
+  /* Cada celda = etiqueta + valor, en dos columnas */
+  .table tbody td {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    white-space: normal;        /* permite que el texto se ajuste a la pantalla */
+    text-align: right;          /* el valor (a la derecha) */
+    border-bottom: 0;           /* sin líneas extra */
+  }
+  .table tbody td + td { border-top: 1px dashed var(--border); } /* separador sutil */
+  .table tbody td::before {
+    color: #0a223d;
+    font-weight: 700;
+    content: "";                /* se define por columna abajo */
+    text-align: left;           /* etiqueta a la izquierda */
+  }
+
+  /* Etiquetas por columna (coinciden con tus headers) */
+  .table tbody td:nth-child(1)::before { content: "Subset"; }
+  .table tbody td:nth-child(2)::before { content: "Input"; }
+  .table tbody td:nth-child(3)::before { content: "Traditional methods"; }
+  .table tbody td:nth-child(4)::before { content: "Output (ours)"; }
+  .table tbody td:nth-child(5)::before { content: "Ratio (ours)"; }
+
+  /* Tipografía y densidad un poco más compacta en móvil */
+  .table tbody td, .table tbody td::before { font-size: 14px; }
+  .fact-grid { grid-template-columns: 1fr; }
+}
+
+/* Mantén juntas cifras + unidades en cualquier tamaño */
+.num { white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+/* ===== Centrar imágenes en todas las pantallas ===== */
+.media-card { display: grid; justify-items: center; }
+.media-card figure { margin: 0; width: 100%; display: grid; justify-items: center; }
+.media {
+  display: block;
+  width: auto;
+  max-width: min(100%, 960px);
+  height: auto;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+.media-caption { text-align: center; color: var(--muted); margin-top: 8px; }
+
+/* Si la imagen va dentro de .grid, que ocupe la fila completa y quede centrada */
+.grid .media-card { grid-column: 1 / -1; justify-self: center; }
+@media (min-width: 980px) { .grid { grid-template-columns: 1fr 1fr; } }
+
+
+.table th,
+.table td {
+  white-space: nowrap;   /* mantiene todo en una sola línea */
+  overflow: hidden;      /* opcional: oculta si el texto se pasa */
+  text-overflow: ellipsis; /* opcional: agrega "..." si el texto no cabe */
+}
