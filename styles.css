@@ -75,11 +75,11 @@ p{ margin:.55rem 0; }
 .brand{ display:flex; align-items:center; gap:8px; text-decoration:none; }
 /* Logo: bigger + square corners */
 .brand-logo{
-  width:34px; height:34px; border-radius:0; object-fit:contain;
+  width:44px; height:44px; border-radius:0; object-fit:contain;
   image-rendering:crisp-edges; image-rendering:-webkit-optimize-contrast; display:block;
 }
-@media (min-width:768px){ .brand-logo{ width:40px; height:40px; } }
-@media (min-width:1200px){ .brand-logo{ width:48px; height:48px; } }
+@media (min-width:768px){ .brand-logo{ width:50px; height:50px; } }
+@media (min-width:1200px){ .brand-logo{ width:68px; height:68px; } }
 
 .nav-links{ display:flex; align-items:center; gap:18px; }
 .nav-links a{ font-weight:600; letter-spacing:.1px; text-decoration:none; color:var(--ink); }
