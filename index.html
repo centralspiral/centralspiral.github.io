@@ -43,7 +43,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CENTRAL SPIRAL  Lossless Compression for Data Centers, Backup, Transfer</title>
+  <title>CENTRAL SPIRAL | Lossless Compression for Data Centers, Backup, Transfer | Empowering progress through data compression.</title>
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <meta name="description" content="Universal, lossless compression that reduces storage growth, egress, and energy across data centers, backup/DR, and edge-to-cloud transfer." />
@@ -70,7 +70,7 @@
     .nav-links a{ font-weight:600; letter-spacing:.1px; }
     .btn{ font-weight:700; border-radius: var(--rad); box-shadow: var(--shadow-2); }
 
-    /* HERO */
+
     .hero-video{ position:relative; }
     .hero-video .hero-shade{
       background:linear-gradient(90deg, rgba(8,18,36,.88) 0%, rgba(8,18,36,.45) 60%, rgba(8,18,36,.10) 100%);
@@ -79,24 +79,23 @@
     .hero-content{ position: relative; }
     .note-hero{ margin-top:.6rem; opacity:.85; font-size:.92rem; }
 
-    /* Headings */
+
     h1{ font-size:clamp(2.2rem, 3.2vw, 3.2rem); }
     h2{ font-size:clamp(1.6rem, 2.2vw, 2rem); margin-bottom:.4rem; }
     h3{ font-size:clamp(1.15rem,1.7vw,1.25rem); }
 
-    /* Cards & grids */
+
     .card{ padding:18px; border-radius: var(--rad); box-shadow: var(--shadow-2); }
     .split{ gap:20px; }
     .uc{ padding:16px; }
     .img-frame{ border-radius: var(--rad); }
 
-    /* Value band */
     .value-grid{ gap:16px; }
     @media(min-width:1180px){ .value-grid{ grid-template-columns:repeat(4,1fr); } }
     .value .k{ font-weight:800; font-size:1.1rem; }
     .value .t{ font-size:.98rem; }
 
-    /* Featured */
+
     .featgrid{ gap:16px; }
     .feat .meta{ margin:.35rem 0 .6rem; }
     .tag{ font-size:.86rem; }
@@ -104,20 +103,19 @@
     .feat a::after{ content:"➜"; transition:transform .15s ease; }
     .feat a:hover::after{ transform: translateX(2px); }
 
-    /* Sticky mobile CTA */
+
     @media(max-width:760px){
       .sticky-cta{ position:sticky; bottom:10px; display:flex; justify-content:center; padding:6px 0; z-index:5; }
       .sticky-cta .btn{ box-shadow:0 10px 30px rgba(0,0,0,.18); }
     }
 
-    /* Badges hero */
+
     .badges-hero{ display:flex; gap:10px; align-items:center; margin-top:.8rem; flex-wrap:wrap; opacity:.9;}
     .badges-hero .badge{ padding:6px 10px; border-radius:999px; background:rgba(255,255,255,.10); border:1px solid rgba(255,255,255,.22); font-size:.85rem; }
 
     video.hero-bg{ object-fit:cover; }
     img{ max-width:100%; height:auto; }
 
-    /* ===== Header overlay dentro del hero ===== */
     .site-header.overlay{
       position:absolute; top:0; left:0; right:0;
       background:transparent; box-shadow:none; z-index:10; backdrop-filter:none;
@@ -125,7 +123,6 @@
     }
     .site-header.overlay .nav-links a{ color:#fff; }
     .site-header.overlay .btn{ background:#fff; color:#0a223d; }
-    /* Estado sólido al salir del hero */
     .site-header.overlay.is-solid{
       position:fixed; top:0; left:0; right:0;
       background:rgba(255,255,255,.92);
@@ -136,17 +133,16 @@
     .site-header.overlay.is-solid .btn{
       background:var(--btn-bg, #0a223d); color:var(--btn-fg, #fff);
     }
-    body.has-fixed-header{ padding-top:64px; } /* ajusta si tu header es más alto */
+    body.has-fixed-header{ padding-top:64px; } 
   </style>
 
   <style id="accent-theme">
     :root { --accent: #008dec; }
 
-    /* Links */
     a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
     a:hover { text-decoration-thickness: 2px; }
 
-    /* Buttons */
+
     .btn, .btn.btn-primary { --btn-bg: var(--accent); --btn-fg:#fff; }
     .btn.btn-outline, .btn-ghost {
       --btn-bg:#fff; --btn-fg: var(--accent);
@@ -154,21 +150,21 @@
       background:#fff !important;
     }
 
-    /* Hero highlight */
+
     .hl, .hero-text .hl, .hero-text strong[style*="#008dec"] { color: var(--accent) !important; }
 
-    /* Value band accents (subtle) */
+
     .values .value .k { color: var(--accent); }
     .values .value .eyebrow { color: color-mix(in srgb, var(--accent) 55%, #0a223d); }
 
-    /* Use cases */
+
     .uc-card.is-active {
       border-color: var(--accent);
       box-shadow: 0 0 0 2px rgba(0,141,236,.35), 0 12px 28px rgba(2,6,23,.08);
     }
     .uc-title { color: #0a223d; }
 
-    /* Horizontal timeline (hline / htl variants) */
+
     .hline-track,
     #timeline .htl-track::before{
       background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 30%, #ffffff));
@@ -189,7 +185,7 @@
       color: #0a223d;
     }
 
-    /* Selection color */
+
     ::selection { background: rgba(0,141,236,.25); }
   </style>
     <style>
