@@ -44,6 +44,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CENTRAL SPIRAL  Lossless Compression for Data Centers, Backup, Transfer</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <meta name="description" content="Universal, lossless compression that reduces storage growth, egress, and energy across data centers, backup/DR, and edge-to-cloud transfer." />
   <link rel="stylesheet" href="styles.css?v=tl2">
   <link rel="stylesheet" href="timeline-subtle.css?v=2">
@@ -473,7 +475,7 @@
   <section id="video" class="section container" aria-label="Product demo">
     <p class="p-lead" id="video-desc">A short demonstration of how the compressor works in practice:</p>
     <div class="table-wrap" style="padding:10px">
-      <video controls preload="metadata" aria-describedby="video-desc" style="width:100%;height:auto;border-radius:10px">
+      <video controls preload="metadata" aria-describedby="video-desc" style="width:100%;height:auto;border-radius:10px" autoplay muted id="mVideo">
         <source src="assets/videoplayback.mp4" type="video/mp4" />
         <track kind="captions" srclang="en" src="assets/key-moments.vtt" label="English" default>
         Your browser does not support HTML5 video.
@@ -838,7 +840,10 @@
     </nav>
   </div>
 </footer>
-
+<script>
+        const video = document.getElementById('mVideo');
+        video.playbackRate = 3; 
+</script>
 
 <script src="script.js" defer></script>
 </body>
