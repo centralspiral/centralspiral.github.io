@@ -1,6 +1,18 @@
+User-agent: *archive.org*
+Disallow: /
+
 User-agent: ia_archiver
 Disallow: /
 
 User-agent: archive.org_bot
+Disallow: /
+
+User-agent: archive.org_bot_service
+Disallow: /
+
+User-agent: archive.org_bot_enumerator
+Disallow: /
+
+User-agent: archive.org_bot_wikipedia
 Disallow: /
 
